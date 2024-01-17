@@ -5,6 +5,7 @@ use App\Http\Controllers\AuthenticatedSessionController;
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
 
+Route::view('/home', 'home')->name('home');
 Route::view('/', 'welcome')->name('welcome');
 Route::view('/contact', 'contact')->name('contact');
 
