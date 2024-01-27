@@ -20,7 +20,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        Model::unguard(); //deshabilitamos la proteccion contra asignacion masiva
+        Model::unguard(); //deshabilitamos la proteccion contra asignacion masiva técnica de asignar valores a múltiples atributos de un modelo de forma simultánea utilizando un solo arreglo de datos.
         //siempre y cuando no creemos ni actualicemos a traves del metodo $request->all()
         //ya que este metodo envia TODOS los campos del dato que queremos crear y actualizar, es inseguro
         //siempre utilizar el metodo validated del SavePostRequest
